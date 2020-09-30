@@ -16,14 +16,14 @@ def Addition(A,B,C,r1,c1):
     for i in range(r1):
         for j in range(c1):
             C[i][j] = A[i][j] + B[i][j]
-    print("Addition of the matrix is :")
+    print("Addition of the matrix :")
     show(C,r1,c1)
     
 def Subtraction(A,B,C,r1,c1):
     for i in range(r1):
         for j in range(c1):
             C[i][j] = A[i][j] - B[i][j]
-    print("Subtraction of the matrix is :")
+    print("Subtraction of the matrix :")
     show(C,r1,c1)
 
 def Multiplication(A,B,C,r1,c1,c2):
@@ -33,7 +33,7 @@ def Multiplication(A,B,C,r1,c1,c2):
             for k in range(c1):
                 sum = sum + (A[i][k] * B[k][j])
             C[i][j] = sum
-    print("Matrix multiplication is :")
+    print("Matrix multiplication :")
     show(C,r1,c2)
 
 def Transpose(T,M,r,c):
@@ -97,4 +97,4 @@ while True:
         T = [[0 for j in range(r2)]for i in range(c2)]
         Transpose(T, B, r2, c2)
     else:
-        print("Invalid option!!! please enter valid ")
+        print("Invalid option ")
