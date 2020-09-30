@@ -2,7 +2,8 @@ def accept(L,r,c):
     for i in range(r):
         L1 = []
         for j in range(c):
-            L1.append(int(input()))
+            L1.append(int(input()))#ere inbuilt functions are not used.
+            #for better logic understanding 
         L.append(L1)
         
 def show(L,r,c):
@@ -48,7 +49,7 @@ while True:
     print("4. Subtraction of the matrix ")
     print("5. Multiplication of the matrix ")
     print("6. Transpose of the matrix ")
-    print("0. Exit the program!!!")
+    print("0.  Exit the program!!!")
     ch = int(input("Enter your choice : "))
     C = []
     if(ch == 0):
@@ -96,4 +97,4 @@ while True:
         T = [[0 for j in range(r2)]for i in range(c2)]
         Transpose(T, B, r2, c2)
     else:
-        print("Invalid option!!!")
+        print("Invalid option!!! please enter valid ")
